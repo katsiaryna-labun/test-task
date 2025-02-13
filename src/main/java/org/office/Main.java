@@ -8,6 +8,7 @@ import org.office.exception.*;
 import org.apache.commons.cli.*;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 
@@ -164,7 +165,7 @@ public class Main {
 
 
     private static void writeOutputFile(String path) throws IOException {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(path))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(path, StandardCharsets.UTF_8))) {
             String line;
             for (Department department:departments) {
                 writer.write(department.getDepartmentName());

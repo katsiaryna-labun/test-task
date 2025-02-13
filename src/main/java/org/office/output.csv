@@ -8,5 +8,5 @@ Manager,1,Jane Smith,5000.00
 Employee,101,John Doe,3000.00
 Employee,103,Chris White,3100.00
 3,3700.00
-???????????? ??????:
+Некорректные данные:
 Employee,102,Emily Johnson,abc,2
